@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>"UZUM MARKET" Калькулятор заработной платы</title>
+    <style>
+      .input-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Центрируем контейнеры */
+    }
+    
+    .input-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        border: 2px solid #000000;
+        padding: 10px;
+        border-radius: 8px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+    .field {
+      display: flex;
+      flex-direction: column;
+      width: 45%; /* Фиксированная ширина для поля */
+      margin-right: 20px;
+      border: 1px solid #25f2b8;
+      padding: 10px;
+      border-radius: 5px; /* Скругление углов */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень для поля */
+  }
+
+  
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #7000ff; /* Цвет фона */
+        color: white; /* Цвет текста */
+        font-weight: bold;
+        text-align: center;
+        padding: 50px;
+      }
+
+      h2 {
+        color: white;
+      }
+
+      .input-group {
+        margin-bottom: 5px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="number"],
+      input[type="text"],
+      select,
+      datalist {
+        width: 25%; /* Установите нужную ширину */
+        padding: 5px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        margin: 5px auto;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        margin: 20px 0;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+
+
+      .form-control {
+        width: 20%;
+        padding: 10px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        margin: 10px auto;
+      }
+
+    </style>
+  </head>
+  <img>
+    <h2>"UZUM MARKET" Калькулятор заработной платы Январь</h2>
+
+    <div class="input-container">
+      <div class="input-row">
+          <div class="field">
+            <label for="ucellCooperation">ПВЗ совместно с UCELL?</label>
+            <input type="text" id="ucellCooperation" list="ucellCooperationList" class="form-control" />
+            <datalist id="ucellCooperationList">
+              <option value="Да"></option>
+              <option value="Нет"></option>
+            </datalist>
+          </div>
+          <div class="field">
+            <label for="city">Город:</label>
+            <input type="text" id="myInput" list="myList" />
+            <datalist id="myList">
+              <option value="Ташкент"></option>
+              <option value="Самарканд"></option>
+              <option value="Фергана"></option>
+              <option value="Бухара"></option>
+              <option value="Навои"></option>
+              <option value="Андижан"></option>
+              <option value="Карши"></option>
+              <option value="Термез"></option>
+              <option value="Наманган"></option>
+              <option value="Джизак"></option>
+              <option value="Ургенч"></option>
+              <option value="Коканд"></option>
+              <option value="Нукус"></option>
+              <option value="Чирчик"></option>
+              <option value="Ангрен"></option>
+              <option value="Алмалык"></option>
+              <option value="Гулистан"></option>
+              <option value="Янгиюль"></option>
+              <option value="Шахрисабз"></option>
+              <option value="Зарафшан"></option>
+              <option value="Бекабад"></option>
+              <option value="Маргилан"></option>
+              <option value="Асака"></option>
+              <option value="Ходжейли"></option>
+              <option value="Хива"></option>
+              <option value="Каган"></option>
+              <option value="Учкудук"></option>
+              <option value="Чуст"></option>
+              <option value="Кибрай"></option>
+              <option value="Газалкент"></option>
+              <option value="Келес"></option>
+              <option value="Ахангаран"></option>
+              <option value="Кувасай"></option>
+              <option value="Нурафшан"></option>
+              <option value="Риштан"></option>
+              <option value="Туракурган"></option>
+              <option value="Каттакурган"></option>
+              <option value="Шахрихан"></option>
+              <option value="Зангиата"></option>
+              <option value="Фуркат"></option>
+              <option value="Бешарык"></option>
+              <option value="Яйпан"></option>
+              <option value="Кургантепа"></option>
+              <option value="Алмазар"></option>
+              <option value="Галаасия"></option>
+              <option value="Джалакудук"></option>
+              <option value="Ибрат"></option>
+              <option value="Каракитай"></option>
+              <option value="Каракуль"></option>
+              <option value="Карасу"></option>
+              <option value="Куксарай"></option>
+              <option value="Эшангузар"></option>
+              <option value="Караулбазар"></option>
+              <option value="Касан"></option>
+              <option value="Гузар"></option>
+              <option value="Шафиркан"></option>
+              <option value="Назарбек"></option>
+              <option value="Ходжаабад"></option>
+              <option value="Дангара"></option>
+              <option value="Аккурган"></option>
+              <option value="Янгибазар"></option>
+              <option value="Гиждуван"></option>
+              <option value="Жондор"></option>
+              <option value="Чартак"></option>
+              <option value="Ханабад"></option>
+              <option value="Денау"></option>
+              <option value="Пскент"></option>
+              <option value="Кунград"></option>
+              <option value="Учкурган"></option>
+              <option value="Байсун"></option>
+              <option value="Мубарек"></option>
+              <option value="Китаб"></option>
+            </datalist>
+          </div>
+        </div>
+      
+        <div class="field">
+        <div id="results"></div>
+        <script src="sfuscript.js"></script>
+      </div>
+    </div> 
+
+
+    </div>
+   
+      <div class="input-container">
+        <div class="input-row">
+            <div class="field">
+                <label for="workedHours">Кол-во отработанных часов:</label>
+                <input type="number" id="workedHours" />
+            </div>
+            <div class="field">
+                <label for="normHours">Норма по часам:</label>
+                <input type="number" id="normHours" />
+            </div>
+          </div>
+          <div class="field">
+            <div id="results3"></div>
+            <script src="sfuscript.js"></script>
+          </div>
+        </div>
+        </div>
+ 
+        <div class="input-container">
+          <div class="input-row">
+              <div class="field">
+                <label for="ordersCount">Кол-во заказов:</label>
+                <input type="number" id="ordersCount" />
+              </div>
+              <div class="field">
+                <label for="vchlScore">Балл ВЧЛ:</label>
+                <input type="number" id="vchlScore" />
+              </div>
+            </div>
+            <div class="field">
+              <div id="results4"></div>
+              <script src="sfuscript.js"></script>
+            </div>
+          </div>
+          </div>
+
+          <div class="input-container">
+            <div class="input-row">
+                <div class="field">
+                  <label for="changesCount">Кол-во лимитов START:</label>
+                  <input type="number" id="changesCount" />
+                </div>
+                <div class="field">
+                  <label for="changesPlan">План по лимитам START</label>
+                  <input type="number" id="changesPlan" />
+                </div>
+              </div>
+              <div class="field">
+                <div id="results5"></div>
+                <script src="sfuscript.js"></script>
+              </div>
+            </div>
+            </div>
+  
+            <div class="input-container">
+              <div class="input-row">
+                  <div class="field">
+                    <label for="limitsCount">Кол-во лимитов MAX:</label>
+                    <input type="number" id="limitsCount" />
+                  </div>
+                  <div class="field">
+                    <label for="planCompletion">План по лимитам MAX</label>
+                    <input type="number" id="planCompletion" />
+                  </div>
+                </div>
+                <div class="field">
+                  <div id="results6"></div>
+                  <script src="sfuscript.js"></script>
+                </div>
+              </div>
+              </div>
+
+                
+            <div class="input-container">
+              <div class="input-row">
+                  <div class="field">
+                    <label for="simCards">Кол-во сим-карт:</label>
+                    <input type="number" id="simCards" />
+                  </div>
+                  <div class="field">
+                    <label for="testScore">Балл по тестированию:</label>
+                    <input type="number" id="testScore" />
+                  </div>
+                </div>
+                <div class="field">
+                  <div id="results7"></div>
+                  <script src="sfuscript.js"></script>
+                </div>
+              </div>
+              </div>
+
+                <div id="totalText"></div>
+                <script src="sfuscript.js"></script>
+  
+</body>
+</html>

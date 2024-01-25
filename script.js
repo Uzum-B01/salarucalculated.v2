@@ -213,7 +213,7 @@ let daysInMonth = endOfMonth.getDate();
   var resultsText = "Выберите нужный вариант";
   var resultsText2 = "Заполните поля";
   var resultsText3 = "Оклад: " + result + "<br> Переработки: " + result2;
-  var resultsText4 = "Прогнозируемое кол-во заказов: " + formatNumber(Math.round(ordersCount)) +
+  var resultsText4 = "Прогнозируемое кол-во выданных заказов: " + formatNumber(Math.round(ordersCount)) +
     "<br> Грейд по ВЧЛ: " +
     vchlGreyd +
     "<br> Бонус по ВЧЛ: " +
